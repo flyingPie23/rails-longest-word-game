@@ -1,0 +1,31 @@
+<p> </p>
+
+<div class="row justify-content-center">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card">
+    <div class="card-body">
+      <div class="container-fluid">
+        <h2>The Longest Word Game</h2>
+        <p>Make the Longest Word You Can From This Letters</p>
+
+        <ul class="list-group grid text-center">
+          <li class="list-group-item"><%= ('a'..'z').to_a.sample%></li>
+          <li class="list-group-item"><%= ('a'..'z').to_a.sample%></li>
+          <li class="list-group-item"><%= ('a'..'z').to_a.sample%></li>
+          <li class="list-group-item"><%= ('a'..'z').to_a.sample%></li>
+          <li class="list-group-item"><%= ('a'..'z').to_a.sample%></li>
+          <li class="list-group-item"><%= ('a'..'z').to_a.sample%></li>
+          <li class="list-group-item"><%= ('a'..'z').to_a.sample%></li>
+        </ul>
+
+        <p> </p>
+
+        <form class="d-flex" role="search" action="/result" data-turbo="false">
+          <input class="form-control me-2" type="search" placeholder="Input your word" aria-label="Search" name="result">
+          <button class="btn btn-outline-success" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>
